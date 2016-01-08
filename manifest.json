@@ -1,0 +1,41 @@
+{
+  "name": "github.ext",
+  "version": "0.0.1",
+  "manifest_version": 1,
+
+  "description": "github Extension",
+  "homepage_url": "https://github.com/yuankui/github.ext",
+
+  "icons": {
+    "16": "github.ext.ico",
+    "48": "github.ext.ico",
+    "128": "github.ext.ico"
+  },
+
+  "permissions": [
+    "*://*.github.com/",
+    "*://github.com/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.github.com/*",
+        "*://github.com/*"
+      ],
+      "css": [
+        "css/style.css"
+      ],
+      "js": [
+        "lib/jquery-2.0.0.js",
+        "js/all.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+
+  "web_accessible_resources": [
+    "template/avatar_tip.tpl"
+  ]
+
+}
