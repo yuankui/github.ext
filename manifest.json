@@ -1,7 +1,7 @@
 {
   "name": "github.ext",
   "version": "0.0.1",
-  "manifest_version": 1,
+  "manifest_version": 2,
 
   "description": "github Extension",
   "homepage_url": "https://github.com/yuankui/github.ext",
